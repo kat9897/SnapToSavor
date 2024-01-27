@@ -1,6 +1,4 @@
 from taipy.gui import navigate
-import cohere  
-co = cohere.Client(api_key)
 
 # Bindings
 selected_files = None
