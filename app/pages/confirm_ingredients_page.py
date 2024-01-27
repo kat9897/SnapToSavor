@@ -1,7 +1,7 @@
 from taipy.gui import navigate
 
 # Bindings
-image = r"C:\Users\katri\OneDrive\Pictures\background.jpg"
+image = "app/pages/img/MBTI.png"
 num_ingred = 0
 
 confirm_ingredients_page="""
@@ -12,9 +12,11 @@ confirm_ingredients_page="""
 <|
 <|Confirm {num_ingred} ingredient(s):|>
 |>
+<|{selected_files}|file_selector|label=Upload File|on_action=upload_files|extensions=.jpg,.jpeg,.png|drop_message=Drop Message|multiple|>
 |>
 """
 
-def uploaded_files(state):
+def upload_files(state):
     navigate(state, "recipes")
+
 

@@ -8,5 +8,5 @@ landing_page="""
 """
 
 def uploaded_files(state):
-    navigate(state, "confirm")
+    navigate(state, to="confirm")
 
