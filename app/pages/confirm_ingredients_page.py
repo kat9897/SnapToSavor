@@ -1,7 +1,9 @@
 from taipy.gui import navigate
+import os
 
 # Bindings
-image = "app/pages/img/image-missing.svg" # default image without any user input
+here = os.path.dirname(os.path.abspath(__file__))
+image = os.path.join(here, "./img/image-missing.svg") # default image without any user input
 num_ingred = 0
 
 confirm_ingredients_page="""
@@ -9,18 +11,15 @@ confirm_ingredients_page="""
 <|card card-bg|
 <|{image}|image|label="Uploaded Fridge Image"|>
 |>
-<|
-<|
 <|card card-bg|
 <|Confirm {num_ingred} ingredient(s):|>\n
 |>
-<|{selected_files}|file_selector|label=Upload File|on_action=confirmed_ingred|extensions=.jpg,.jpeg,.png|drop_message=Drop Message|multiple|>
-|>
-|>
 <|Confirm|button|on_action=confirmed_ingred|>
+|>
 """
 
 def confirmed_ingred(state):
-    navigate(state, "recipes")
+    print(image)
+    # navigate(state, "recipes")
 
 
