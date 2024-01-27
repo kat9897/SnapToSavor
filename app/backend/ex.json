@@ -1,0 +1,76 @@
+{
+    "RecipeID": 640266,
+    "RecipeName": "Crab and Shrimp Burgers With Garlic Grits Fries",
+    "Description": "",
+    "RecipeThumbnailLink": "https: //spoonacular.com/recipeImages/640266-556x370.jpg",
+    "DatePosted": "",
+    "RecipeIngredients": [
+        {
+            "RecipeID": 640266,
+            "IngredientID": 15270,
+            "Quantity": 1.5,
+            "QuantityUnit": "cups"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1123,
+            "Quantity": 1.0,
+            "QuantityUnit": ""
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 18079,
+            "Quantity": 1.5,
+            "QuantityUnit": "cups"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1032034,
+            "Quantity": 0.25,
+            "QuantityUnit": "cups"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1145,
+            "Quantity": 2.0,
+            "QuantityUnit": "Tbsps"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 8160,
+            "Quantity": 1.0,
+            "QuantityUnit": "cup"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 14412,
+            "Quantity": 3.0,
+            "QuantityUnit": "cups"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1077,
+            "Quantity": 1.0,
+            "QuantityUnit": "cup"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1082047,
+            "Quantity": 2.0,
+            "QuantityUnit": "tsps"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 1001026,
+            "Quantity": 0.5,
+            "QuantityUnit": "cups"
+        },
+        {
+            "RecipeID": 640266,
+            "IngredientID": 2020,
+            "Quantity": 8.0,
+            "QuantityUnit": "servings"
+        }
+    ],
+    "Ingredients": []
+}
