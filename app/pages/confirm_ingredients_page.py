@@ -1,13 +1,17 @@
 from taipy.gui import navigate
+from PIL import Image
 
 # Bindings
-image = "app/pages/img/image-missing.svg" # default image without any user input
+image = Image.open("app/pages/img/missing_img.jpg") # default image without any user input
+resized_image = image.resize(400,400)
+resized_image.save("app/pages/img/missing_img.jpg")
+
 num_ingred = 0
 
 confirm_ingredients_page="""
 <|layout|columns=2 2|
 <|card card-bg|
-<|{image}|image|label="Uploaded Fridge Image"|>
+<|{resized_image}|image|label="Uploaded Fridge Image"|>
 |>
 <|
 <|
