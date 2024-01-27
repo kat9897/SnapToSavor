@@ -13,11 +13,11 @@ pages = {
 }
 
 stylekit = {
-  "color_primary": "#BADA55",
+  "color_primary": "#F87F7F",
   "color_secondary": "#C0FFE",
 }
 
 if __name__ == "__main__":
-    Gui(pages=pages).run(debug=True, use_reloader=True, port=8080, stylekit=stylekit)
+    Gui(pages=pages).run(debug=True, use_reloader=True, port=8080, stylekit=stylekit, dark_mode=False)
 
 
