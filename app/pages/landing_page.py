@@ -1,10 +1,10 @@
 from taipy.gui import navigate
+import cohere  
+co = cohere.Client(api_key)
 
 # Bindings
 selected_files = None
-
-value = "Search for recipe..."
-content = 
+value = None
 
 landing_page="""
 <|{selected_files}|file_selector|label=Upload File|on_action=uploaded_files|extensions=.jpg,.jpeg,.png|drop_message=Drop Message|>
