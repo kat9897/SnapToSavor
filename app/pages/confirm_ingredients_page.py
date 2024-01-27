@@ -13,8 +13,9 @@ confirm_ingredients_page="""
 <|Confirm {num_ingred} ingredient(s):|>
 |>
 |>
+<|Confirm|button|on_action=confirmed_ingred|>
 """
 
-def uploaded_files(state):
+def confirmed_ingred(state):
     navigate(state, "recipes")
 
