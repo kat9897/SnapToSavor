@@ -1,14 +1,15 @@
 from taipy.gui import navigate
+from .landing_page import *
 import os
 from food_api import *
 
 # Bindings
-#here = os.path.dirname(os.path.abspath(__file__))
-#image = os.path.join(here, "./img/image-missing.svg") # default image without any user input
+# here = os.path.dirname(os.path.abspath(__file__))
+# image = os.path.join(here, "./img/image-missing.svg") # default image without any user input
 num_ingred = 0
 
 confirm_ingredients_page="""
-<|layout|columns=2 2|
+<|layout|columns=2 3|
 <|card card-bg|
 <|{selected_files}|image|label="Uploaded Fridge Image"|>
 |>
@@ -20,8 +21,16 @@ confirm_ingredients_page="""
 |>
 """
 
-def confirmed_ingred(state):
-    print(image)
-    # navigate(state, "recipes")
+# |label="Uploaded Fridge Image"
 
+def confirmed_ingred(state):
+    # print(image)
+    navigate(state, "recipes")
+
+
+def resize_img(img):
+    '''
+    Resize the image img to a desired size.
+    '''
+    pass
 
