@@ -1,4 +1,5 @@
 import requests
+from pages.landing_page import *
 
 #saves a list of the different items!
 # img format should be the file path of the image. Ex: /User
@@ -20,5 +21,5 @@ def get_ingredients(img):
 
 
 # Test of the call
-#food_name_test = get_ingredients('/Users/marilynzhang/Desktop/food_test_2.jpg')
+food_name_test = get_ingredients({selected_files})
 #print(food_name_test)
