@@ -13,7 +13,7 @@ def compress_img(input_img_path, output_img_path, quality=50):
 #saves a list of the different items!
 # img format should be the file path of the image. Ex: /User
 def get_ingredients(img):
-    api_user_token = '016da25e7e5a4e2f2b8bff3b0664c6612665ef09'
+    api_user_token = 'a4a1d50385dc3ab50a6088a414b031137c87308c'
     headers = {'Authorization': 'Bearer ' + api_user_token}
 
     # Compression
