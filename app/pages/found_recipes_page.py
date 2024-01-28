@@ -24,18 +24,18 @@ found_recipes_page = """
 <|layout|columns=1 1 1|
 <|card card-bg|
 {items[0][1]}
-{items[0][4]|image}
+<|{items[0][4]}|image|>
 {items[0][6]}
 |>
 <|card card-bg|
 {items[1][1]}
-{items[1][4]|image}
+<|{items[1][4]}|image|>
 {items[1][6]}
 <|app/pages/img/banana-baby-producto-caribbean-exotics.png|image|>
 |>
 <|card card-bg|
 {items[2][1]}
-{items[2][4]|image}
+<|{items[2][4]}|image|>
 {items[2][6]}
 <|app/pages/img/banana.jpg|image|>
 |>
