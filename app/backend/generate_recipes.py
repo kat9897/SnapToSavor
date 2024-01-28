@@ -1,15 +1,16 @@
 import requests
 
-from .. import API_KEY
+API_KEY="d6ae8724c8694f1db0cb33b4cef0e8a1"
 
 def parse_recipes(state):
     recipes = []
     result = get_random_recipes(state)
+    #print(recipes)
     for first_recipe in result["recipes"]:
         recipe = {
             "RecipeID": first_recipe["id"],
             "RecipeName": first_recipe["title"],
-            "Description": "",
+            "Description": first_recipe["summary"],
             "RecipeThumbnailLink": first_recipe["image"],
             "DatePosted": "",
             "RecipeIngredients": [],

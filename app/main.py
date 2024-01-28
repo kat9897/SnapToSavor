@@ -18,6 +18,6 @@ stylekit = {
 }
 
 if __name__ == "__main__":
-    Gui(pages=pages).run(debug=True, use_reloader=True, port=8080, stylekit=stylekit, dark_mode=False)
+    Gui(pages=pages).run(debug=True, use_reloader=True, port=8081, stylekit=stylekit, dark_mode=False)
 
 
