@@ -1,4 +1,4 @@
-# UofTHacks
+# SnapToSavor
 Our ingredients to recipe app for UofTHacks 11!
 
 ## Instructions
