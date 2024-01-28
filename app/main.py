@@ -4,6 +4,7 @@ from pages.landing_page import *
 from pages.found_recipes_page import *
 from pages.root_page import *
 from pages.confirm_ingredients_page import *
+from food_api import *
 
 pages = {
     "/": root_page,
@@ -18,6 +19,7 @@ stylekit = {
 }
 
 if __name__ == "__main__":
+    
     Gui(pages=pages).run(debug=True, use_reloader=True, port=8080, stylekit=stylekit, dark_mode=False)
 
 
