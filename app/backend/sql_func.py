@@ -140,7 +140,7 @@ def get_recipe(db, cursor, RecipeID):
     cursor.execute(select_query)
     return cursor.fetchall()
 
-def get_recipe_by_ingredient(IngredientList):
+def get_recipe_by_ingredient(db, cursor, IngredientList):
     IngredientsString = ', '.join(f'"{i}"' for i in IngredientList)
 
     select_query = '''SELECT DISTINCT RecipeID

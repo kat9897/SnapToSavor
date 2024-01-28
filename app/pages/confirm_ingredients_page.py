@@ -12,21 +12,17 @@ confirm_ingredients_page="""
 |>
 <|card card-bg|
 <|Confirm {num_ingred} ingredient(s):|>\n
-<|layout|columns=2 1 1|
-<|edit|>
-<|del|>
-|>
+<|{food_name_test}|>
 |>
 <|Confirm|button|on_action=confirmed_ingred|>
 |>
 """
 
-# food_name_test = get_ingredients(selected_files)
+food_name_test = get_ingredients(selected_files)
 
 # <|{food_name_test}|>
 
 # |label="Uploaded Fridge Image"
 
 def confirmed_ingred(state):
-    # print(image)
     navigate(state, "recipes")
