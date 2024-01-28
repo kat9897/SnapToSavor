@@ -1,5 +1,6 @@
 from taipy.gui import navigate
-import os
+from .landing_page import *
+from food_api import *
 
 # Bindings
 # here = os.path.dirname(os.path.abspath(__file__))
@@ -9,7 +10,7 @@ ingredients = []
 num_ingred = 1
 
 confirm_ingredients_page="""
-<|layout|columns=2 2|
+<|layout|columns=2 3|
 <|card card-bg|
 <center>
 <|{selected_files}|image|>
@@ -27,7 +28,4 @@ def update_num_ingred(state):
     num_ingred = num_ingred + 1
 
 def confirmed_ingred(state):
-    print(state.image)
-    # navigate(state, "recipes")
-
-
+    navigate(state, "recipes")

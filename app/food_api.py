@@ -1,6 +1,7 @@
 import requests
 from PIL import Image
 import os
+from pages.landing_page import *
 
 def compress_img(input_img_path, output_img_path, quality=50):
     try:
@@ -35,5 +36,5 @@ def get_ingredients(img):
 
 
 # Test of the call
-#food_name_test = get_ingredients('/Users/marilynzhang/Desktop/food_test_2.jpg')
-#print(food_name_test)
+# food_name_test = get_ingredients(selected_files)
+# print(food_name_test)
