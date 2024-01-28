@@ -1,1 +1,1 @@
-web: python main.py -H 0.0.0.0 -P $PORT
+web: taipy run main.py -H 127.0.0.1 -P 8080
