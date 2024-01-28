@@ -3,14 +3,32 @@ found_recipes_page = """
 <|card card-bg|
 ##  Ingredients
 <|card card-bg| {.red}
+BANANA\n
+BANANA BABY\n
+BANANA
 |>
 |>
 <|card card-bg|
 ## Recipes
-<|part|render=nonempty|>
+
+<|layout|columns=1 1 1|
+<|card card-bg|
+<|app/pages/img/banana.jpg|image|>
+|>
+<|card card-bg|
+<|app/pages/img/banana-baby-producto-caribbean-exotics.png|image|>
+|>
+<|card card-bg|
+<|app/pages/img/banana.jpg|image|>
+|>
+|>
 |>
 |>
 """
 
-def nonempty():
-    return 
+
+# recipe = call database
+# recipes = len[recipe]
+
+# def nonempty():
+#     return recipes != 0
