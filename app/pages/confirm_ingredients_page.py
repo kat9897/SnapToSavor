@@ -8,7 +8,7 @@ selected_files = selected_files
 confirm_ingredients_page="""
 <|layout|columns=2 3|
 <|card card-bg|
-<|{selected_files}|image|label="Uploaded Fridge Image"|>
+<|{selected_files}|image|>
 |>
 <|card card-bg|
 <|Confirm {num_ingred} ingredient(s):|>\n
