@@ -17,10 +17,11 @@ confirm_ingredients_page="""
 </center>
 |>
 <|card card-bg|
-Confirm <|{num_ingred}|text|> ingredient(s):\n
+<|Confirmed {num_ingred} ingredient(s):|>\n
 <|{ingredients[0]}|>
 |>
-<|Confirm|button|on_action=confirmed_ingred|>
+<|Confirm|button|class_name=success|on_action=confirmed_ingred|>
+<|Delete|button|class_name=error|on_action=delete_ingred|>
 |>
 """
 
@@ -29,3 +30,6 @@ def update_num_ingred(state):
 
 def confirmed_ingred(state):
     navigate(state, "recipes")
+
+def delete_ingred(state):
+    navigate(state, to="ingredients")
