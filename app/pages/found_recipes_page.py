@@ -3,9 +3,8 @@ found_recipes_page = """
 <|card card-bg|
 ##  Ingredients
 <|card card-bg| {.red}
-BANANA\n
-APPLE\n
-EGG
+AVOCADO\n
+HAM\n
 |>
 |>
 <|card card-bg|

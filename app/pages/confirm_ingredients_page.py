@@ -18,7 +18,7 @@ confirm_ingredients_page="""
 |>
 <|card card-bg|
 <|Confirmed {num_ingred} ingredient(s):|>\n
-<|{ingredients[0]}|>
+<|{ingredients}|>
 |>
 <|Confirm|button|class_name=success|on_action=confirmed_ingred|>
 <|Delete|button|class_name=error|on_action=delete_ingred|>
