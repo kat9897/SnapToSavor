@@ -12,7 +12,7 @@ def uploaded_files(state):
     navigate(state, to="confirm")
 
 with tgb.Page() as landing_page:
-    tgb.file_selector(value="{selected_files}", label="Upload File", on_action=uploaded_files)
+    tgb.file_selector(content="{selected_files}", label="Upload File", on_action=uploaded_files, extensions=".jpg,.jpeg,.png")
     tgb.html("h2", "Search Function")
     tgb.input(label="Search for recipe...", value="{value}")
     tgb.button("Search", on_action=uploaded_files)
