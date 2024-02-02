@@ -10,8 +10,9 @@ from food_api import *
 # Bindings
 value = ""
 ingredients = ['avocado', 'apple', 'broccoli', 'berries', 'ham meat', 'pomegranate', 'lemon', 'orange', 'pomegranate', 'onion', 'broccoli', 'ketchup sauce', 'ham meat', 'broccoli', 'oatmeal porridge', 'ham meat', 'ham meat', 'brown rice', 'ham meat']
-selected_files = None
+selected_files = ""
 num_ingred = 0
+ingredients_table = []
 
 pages = {
     "/": root_page,

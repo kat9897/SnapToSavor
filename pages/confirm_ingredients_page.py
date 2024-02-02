@@ -25,9 +25,7 @@ with tgb.Page() as confirm_ingredients_page:
             tgb.image(content="{selected_files}", class_name="center")
         with tgb.part(class_name="card card-bg"):
             tgb.text(value="Confirmed Ingredient(s): {num_ingred}")
-            # for ingred in ingredients:
-            #     tgb.html("p", ingred)
-            #     print(ingred)
+            tgb.table(data="{ingredients_table}", editable=True)
         tgb.button("Confirm", class_name="success", on_action=confirmed_ingred)
         tgb.button("Cancel", class_name="error", on_action=delete_ingred)
 

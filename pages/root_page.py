@@ -1,8 +1,8 @@
 root_page = """
-<|toggle|theme|>\n
+<|toggle|theme|>
+<|SnaptoSavor|>
 <center>
     <|navbar|>
 </center>
-
-# SnaptoSavor
+# Upload Food Picture
 """
