@@ -1,4 +1,5 @@
 from taipy import Gui
+import taipy.gui.builder as tgb
 
 from pages.landing_page import landing_page
 from pages.found_recipes_page import found_recipes_page
@@ -10,7 +11,7 @@ from food_api import *
 value = ""
 ingredients = ['avocado', 'apple', 'broccoli', 'berries', 'ham meat', 'pomegranate', 'lemon', 'orange', 'pomegranate', 'onion', 'broccoli', 'ketchup sauce', 'ham meat', 'broccoli', 'oatmeal porridge', 'ham meat', 'ham meat', 'brown rice', 'ham meat']
 selected_files = None
-num_ingred = 1
+num_ingred = 0
 
 pages = {
     "/": root_page,

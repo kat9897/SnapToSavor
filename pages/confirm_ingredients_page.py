@@ -2,6 +2,9 @@ from taipy.gui import navigate
 from .landing_page import *
 from food_api import *
 
+# Extension Docs: https://docs.taipy.io/en/develop/manuals/gui/extension/
+# All types of taipy.gui.builder classes: https://docs.taipy.io/en/develop/manuals/reference/pkg_taipy.gui.builder/
+
 # Bindings
 # here = os.path.dirname(os.path.abspath(__file__))
 # image = os.path.join(here, "./img/image-missing.svg") # default image without any user input
@@ -10,7 +13,7 @@ def confirmed_ingred(state):
     print(state.selected_files)
     print(state.num_ingred)
     print(state.ingredients)
-    #navigate(state, "recipes")
+    navigate(state, "recipes")
 
 def delete_ingred(state):
     state.selected_files = None
@@ -21,7 +24,7 @@ with tgb.Page() as confirm_ingredients_page:
         with tgb.part(class_name="card card-bg"):
             tgb.image(content="{selected_files}", class_name="center")
         with tgb.part(class_name="card card-bg"):
-            tgb.html("p", "Confirmed "+"{num_ingred}"+" ingredient(s):\n")
+            tgb.text(value="Confirmed Ingredient(s): {num_ingred}")
             # for ingred in ingredients:
             #     tgb.html("p", ingred)
             #     print(ingred)
